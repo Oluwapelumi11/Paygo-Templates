@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <section
+      class="font-poppins xl:flex justify-between py-16 max-w-[1110px] mx-auto onboard"
+    >
+      <div>
+        <img
+          src="../assets/svgs/paygo.svg"
+          alt=""
+          class="mb-[84px] hidden xl:block"
+        />
+        <img src="../assets/svgs/pana.svg" alt="" class="hidden xl:block" />
+      </div>
+      <div
+        class="mt-24 px-4 max-w-[500px] text-center xl:max-w-[670px] xl:m-0 mx-auto"
+      >
+        <img
+          src="../assets/svgs/paygo.svg"
+          alt=""
+          class="mx-auto mb-[34px] xl:hidden"
+        />
+        <p class="font-semibold xl:text-[32px]">Create an account</p>
+        <form action="" onSubmit="{handleSubmit}" class="w-full mt-[72px]">
+          <div class="relative">
+            <!-- <MdOutlineEmail class="absolute left-6 top-[18px] text-2xl" /> -->
+            <input
+              type="email"
+              name="email"
+              class="border border-[#D9D9D9] rounded-[13px] w-full pl-5 py-4 placeholder:text-[13px] placeholder:text-[#9E9E9E] placeholder:font-semibold outline-none"
+              placeholder="Email"
+            />
+          </div>
+          <div class="relative">
+            <!-- <MdLockOutline class="absolute left-6 top-[42px] text-2xl" /> -->
+            <input
+              type="password"
+              name="password"
+              class="mt-[28px] border-[#D9D9D9] border rounded-[13px] w-full pl-5 py-4 placeholder:text-[13px] placeholder:text-[#9E9E9E] placeholder:font-semibold outline-none"
+              placeholder="Password"
+            />
+          </div>
+          <div class="relative">
+            <input
+              type="Phone number"
+              name="pNumber"
+              class="mt-[28px] border border-[#D9D9D9] rounded-[13px] w-full pl-5 py-4 placeholder:text-[13px] placeholder:text-[#9E9E9E] placeholder:font-semibold outline-none placeholder:text-opacity-19"
+              placeholder="Phone Number"
+            />
+          </div>
+          <div class="flex mt-[28px] gap-2">
+            <input type="checkbox" name="" id="" class="h-[17px] w-[17px]" />
+            <label htmlFor="" class="text-[11px]">
+              I would like to receive emails and sms with useful offers from
+              ProfitPal.
+            </label>
+          </div>
+          <button
+            type="submit"
+            class="w-52 py-3 text-[13px] text-white bg-[#3B82F6] rounded-[16px] mt-[72px] font-semibold disabled:bg-opacity-30 hover:shadow-shadow"
+          >
+            Create Account
+          </button>
+        </form>
+        <div class="flex justify-center items-center mt-[66px] mb-14">
+          <div class="bg-[#D9D9D98A] h-[1px] w-[100%] max-w-[216px]"></div>
+          <p class="whitespace-nowrap font-semibold text-[13px]">
+            Or sign in with
+          </p>
+          <div class="bg-[#D9D9D98A] h-[1px] w-[100%] max-w-[216px]"></div>
+        </div>
+        <div class="flex justify-center">
+          <span
+            class="border mx-2 border-[#9E8BBD] w-[61px] h-[61px] rounded-full flex justify-center items-center"
+          >
+            <img src="../assets/svgs/apple.svg" alt="" />
+          </span>
+
+          <span
+            class="border mx-2 border-[#9E8BBD] w-[61px] h-[61px] rounded-full flex justify-center items-center"
+          >
+            <img src="../assets/svgs/google.svg" alt="" />
+          </span>
+
+          <span
+            class="border mx-2 border-[#9E8BBD] w-[61px] h-[61px] rounded-full flex justify-center items-center"
+          >
+            <img src="../assets/svgs/facebook.svg" alt="" />
+          </span>
+        </div>
+        <p class="text-[#5E91E6] mt-7">
+          Already have an account?
+          <span class="text-[#FF2B2BB2]"
+            ><a href="/dist/sign-in.html">Sign Up</a></span
+          >
+        </p>
+      </div>
+    </section>
+    <!-- <script src="./js/onboard.js"></script> -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+<h1 class="text-4xl font-bold text-center pb-12">Add Client</h1>
+          <div class="flex justify-between mb-8">
+            <p>Select Client type</p>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Business</p>
+            </div>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Individual</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between">
+            <p>Salutation</p>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Mr</p>
+            </div>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Mrs.</p>
+            </div>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Dr.</p>
+            </div>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>Miss</p>
+            </div>
+            <div x-data="{ isToggled: false }" class="flex">
+              <button
+                @click="isToggled = !isToggled"
+                class="border border-black w-[20px] h-[20px] rounded-full relative flex justify-center items-center"
+              >
+                <svg
+                  class="tick-icon w-6 h-6 text-black absolute opacity-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-show="isToggled"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+              </button>
+              <p>None</p>
+            </div>
+          </div>
+          <form
+            action=""
+            class="grid grid-cols-2 gap-x-7 gap-y-14 border border-green-700"
+          >
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >First Name:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-#727272 h-[45px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >Last Name:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-[#727272] h-[45px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >Email Address:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-[#727272] h-[45px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >Phone Number:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-[#727272] h-[45px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >Website:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-[#727272] h-[45px]"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="" class="font-medium text-[13px] block"
+                >Address 1:</label
+              >
+              <input
+                type="text"
+                name=""
+                id=""
+                class="border border-[#727272] h-[45px]"
+              />
+            </div>
+          </form>
+          <div>
+            <h2>OTHER DETAILS</h2>
+            <div>
+              <p>Currency</p>
+              <div>
+                NGN
+                <div x-data="{ isOpen: false }" class="relative inline-block">
+                  <button
+                    @click="isOpen = !isOpen"
+                    class="px-4 py-2 bg-gray-200"
+                  >
+                    
+                  </button>
+                  <div
+                    x-show="isOpen"
+                    @click.away="isOpen = false"
+                    class="absolute z-10 w-211 h-100 bg-white border border-gray-300 rounded shadow-lg"
+                  >
+                    <!-- Dropdown content -->
+                    <p class="p-4">Dropdown Item 1</p>
+                    <p class="p-4">Dropdown Item 2</p>
+                    <p class="p-4">Dropdown Item 3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>

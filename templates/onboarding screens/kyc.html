@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex flex-col items-center justify-center px-4 py-6">
+      <img src="../svgs/PAYGO.svg" class="py-4 mt-5 m" alt="" />
+      <p class="font-semibold w-[157px] h-[23px] py-3 pb-6 leading-6">
+        Set up your Profile
+      </p>
+
+      <!-- sign in form -->
+      <div class="w-full px-3 my-7">
+        <form class="flex flex-col text-center items-center space-y-4">
+          <input
+            type="text"
+            name=""
+            class="leading-[19.5px] text-[13px] font-semibold border border-[#00000069] h-[51px] w-[332px] px-3"
+            placeholder="Business Name"
+          />
+          <input
+            type="text"
+            name=""
+            class="leading-[19.5px] text-[13px] font-semibold border border-[#00000069] h-[51px] w-[332px] px-3"
+            placeholder="Address of the Business"
+          />
+
+          <div class="flex flex-col text-center">
+            <!-- qr code svg -->
+            <img
+              src="./svgs/QRCode_2023-10-11T14_51_46-121181 1.svg"
+              class="align-middle py-8 text-red-300"
+              alt=""
+            />
+            <!-- end of  qr code svg -->
+          </div>
+          <p
+            class="text-[11px] py-1 font-normal leading-[16.5px] align-middle w-[181px] h-[28px]"
+          >
+            Generate a unique code for your business
+          </p>
+          <p
+            class="w-[67px] h-[14px] text-[11px] font-semibold leading[16.5px] align-middle text-[#A14646] underline"
+          >
+            Learn more
+          </p>
+
+          <input
+            type="submit"
+            value="Generate QR Code"
+            class="py-2 my-4 w-[211px] h-[36px] rounded-2xl bg-blue-500 text-white font-semibold text-[13px] leading-[19.5px]"
+          />
+        </form>
+        <!-- sign in form -->
+      </div>
+    </div>
+  </body>
+</html>
